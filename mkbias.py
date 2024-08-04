@@ -1,5 +1,6 @@
 # This is a python program to make a BIAS frame
 print('Script running')
+import matplotlib.pyplot as plt
 nframes = 30
 ysize = 2064
 xsize = 2048
