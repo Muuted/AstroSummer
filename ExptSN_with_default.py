@@ -29,9 +29,14 @@ def signal_to_noise_ratio(flux, exposure_time, aperture_diameter, efficiency, ai
     area = np.pi * (aperture_diameter / 2) ** 2
     
     # Total photons collected (corrected for efficiency and atmospheric extinction)
+<<<<<<< HEAD
     #total_photons = flux * exposure_time * area * efficiency * 10**(-0.4 * extinction_coefficient * (airmass - 1))
     total_photons = flux * exposure_time* area
 
+=======
+    total_photons = flux * exposure_time * area * efficiency * 10**(-0.4 * extinction_coefficient * (airmass - 1))
+    
+>>>>>>> 7d293c266bed4b05505dd9c2871a59b6c6016735
     # Assuming shot noise is dominant, SNR = sqrt(signal)
     snr = np.sqrt(total_photons)
     return snr
